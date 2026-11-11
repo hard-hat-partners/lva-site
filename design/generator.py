@@ -224,7 +224,7 @@ def footer(sfx):
   <div class="wrap grid-foot" style="position: relative; display: grid; grid-template-columns: minmax(0, 1.5fr) repeat(3, minmax(0, 1fr)); gap: 56px; align-items: start; padding-top: 88px; padding-bottom: 72px">
     <div style="display: flex; flex-direction: column; gap: 22px">
       <img src="{img("logo-stacked-white")}" alt="Mayan Stucco" style="width: 170px; height: auto">
-      <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.75; max-width: 360px">LVA Mayan Stucco LLC is a certified woman-owned company installing stucco, EIFS, plaster, and stone and brick veneers on commercial, industrial and residential buildings throughout Dallas Fort Worth.</p>
+      <p style="margin: 0; font-size: 16px; font-weight: 300; line-height: 1.75; max-width: 360px">LVA Mayan Stucco LLC is a certified woman-owned company installing stucco, EIFS, plaster, exterior molding, stone and brick veneers, and cast stone on commercial, industrial and residential buildings throughout Dallas Fort Worth.</p>
     </div>
     <div style="{col}">
       <div style="{lab}">Explore</div>
