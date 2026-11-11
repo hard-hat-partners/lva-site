@@ -54,7 +54,7 @@ tpl = rep(tpl, 'Certified for the systems architects specify.', 'Our standards, 
 tpl = rep(tpl, 'Five wall systems, one crew trained to install each of them, with the licensing, insurance and bonding to match.', 'These are the standards every LVA crew follows, on every project, whatever the size.')
 tpl = rep(tpl, '>OSHA certified crews</span></div><div', '>Scaffolds checked before each shift</span></div><div')  # third item
 tpl = rep(tpl, '>HUB certified, woman-owned<', '>OSHA certified crews<')
-tiles = [('Total Wall','Scaffolds','Checked every shift'),('STO','Fall safety','Wherever the work is high'),('Dryvit','PPE','Hard hats, vests, eyes, hands'),('Senergy','Dust control','When we mix and cut'),('Parex','Safety data','Product sheets on every site')]
+tiles = [('Total Wall','Scaffolds','Checked every shift'),('STO','Fall safety','Wherever the work is high'),('Dryvit','PPE','Hard hats, vests, eyes, hands'),('Senergy','Dust control','When we mix and cut'),('Parex','Safety data','SDS on every jobsite')]
 for old,new,sub in tiles:
     k = tpl.find('>'+old+'</span>'); assert k>0, old
     tpl = tpl[:k] + '>'+new+'</span>' + tpl[k+len(old)+8:]
