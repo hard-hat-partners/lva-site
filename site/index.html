@@ -248,7 +248,7 @@ html{scroll-behavior:smooth}
  .m-b .zoom{aspect-ratio:4 / 5 !important;height:auto}
  .stack-sm{flex-direction:column !important;align-items:flex-start !important}
 }
-</style>
+.cs-wrap{position:relative;padding:24px;border-radius:50% 50% 0 0 / 14% 14% 0 0;background:linear-gradient(180deg,rgba(255,255,255,0.3),rgba(90,76,60,0.1)),url(/img/stucco-white.jpg) center/512px repeat;box-shadow:0 0 0 1px rgba(80,66,46,0.35),inset 0 3px 0 rgba(255,255,255,0.85),inset 3px 0 0 rgba(255,255,255,0.45),inset -3px 0 0 rgba(80,66,46,0.18),inset 0 -2px 0 rgba(80,66,46,0.3),0 2px 3px rgba(30,24,16,0.18),0 24px 40px rgba(30,24,16,0.28),0 50px 90px rgba(30,24,16,0.22);margin-bottom:34px}.cs-wrap::before{content:'';position:absolute;inset:9px;border-radius:50% 50% 0 0 / 14% 14% 0 0;pointer-events:none;box-shadow:0 0 0 1px rgba(80,66,46,0.28),inset 0 0 0 1px rgba(255,255,255,0.7)}.cs-wrap > .shp-arch{box-shadow:0 0 0 1px rgba(80,66,46,0.55),0 0 0 5px #FBFAF7,0 0 0 6px rgba(80,66,46,0.35),inset 0 10px 24px rgba(0,0,0,0.45) !important}.cs-key{position:absolute;z-index:3;left:50%;top:-18px;width:70px;height:92px;transform:translateX(-50%);background:linear-gradient(180deg,rgba(255,255,255,0.3),rgba(90,76,60,0.1)),url(/img/stucco-white.jpg) center/512px repeat;clip-path:polygon(0 0,100% 0,78% 100%,22% 100%);filter:drop-shadow(0 8px 10px rgba(0,0,0,0.35))}.cs-key::before{content:'';position:absolute;left:0;right:0;top:0;height:12px;background:linear-gradient(180deg,rgba(255,255,255,0.8),rgba(255,255,255,0))}.cs-key::after{content:'';position:absolute;inset:16px 18px 14px;clip-path:polygon(0 0,100% 0,80% 100%,20% 100%);background:linear-gradient(180deg,rgba(80,66,46,0.18),rgba(255,255,255,0.25))}.cs-sill{position:absolute;z-index:3;left:-22px;right:-22px;bottom:-30px;height:30px;background:linear-gradient(180deg,rgba(255,255,255,0.3),rgba(90,76,60,0.1)),url(/img/stucco-white.jpg) center/512px repeat;box-shadow:0 0 0 1px rgba(80,66,46,0.3),inset 0 3px 0 rgba(255,255,255,0.9),inset 0 -4px 0 rgba(80,66,46,0.22),0 14px 22px rgba(30,24,16,0.32)}.cs-sill::before{content:'';position:absolute;left:12px;right:12px;top:-9px;height:9px;background:#FAF8F4;box-shadow:0 0 0 1px rgba(80,66,46,0.25),inset 0 2px 0 rgba(255,255,255,0.85)}.cs-sill::after{content:'';position:absolute;left:30px;right:30px;bottom:-10px;height:10px;background:linear-gradient(180deg,#F1EEE8,#DCD6CC);box-shadow:0 8px 12px rgba(30,24,16,0.25)}.cs-wrap .corner-num + span{white-space:nowrap}.cs-wrap .corner-num{font-size:100px !important}@media (max-width:760px){.cs-wrap{padding:16px;margin-bottom:42px}.cs-wrap::before{inset:6px}.cs-key{width:54px;height:72px;top:-14px}.cs-sill{left:-12px;right:-12px;height:24px;bottom:-24px}.cs-sill::after{left:22px;right:22px}}.rail.cs-rail{padding-top:22px;padding-bottom:40px;padding-left:12px;margin-left:-12px}.rail.cs-rail .cs-sill{left:-10px;right:-10px}</style>
 <style>#dc-root:empty{min-height:100vh;background:#121216}</style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "GeneralContractor", "name": "LVA Mayan Stucco LLC", "url": "https://lvamayanstucco.com", "telephone": "+1-214-875-3606", "email": "laura@lvamayanstucco.com", "image": "https://lvamayanstucco.com/img/og-image.jpg", "address": {"@type": "PostalAddress", "streetAddress": "11258 Goodnight Ln", "addressLocality": "Dallas", "addressRegion": "TX", "postalCode": "75229", "addressCountry": "US"}, "areaServed": "Dallas Fort Worth, Texas", "founder": {"@type": "Person", "name": "Laura Ayala"}, "sameAs": ["https://www.instagram.com/lvamayanstucco/", "https://www.facebook.com/LVAMayanStucco/", "https://www.linkedin.com/company/lva-mayan-stucco"]}</script>
 </head>
@@ -485,8 +485,8 @@ html{scroll-behavior:smooth}
       <div style="display: flex; align-items: center; gap: 14px; justify-content: center;font-family: 'Jost', system-ui, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: #C21C5A"><span style="width: 36px; height: 1px; background: #C21C5A; flex: none"></span>Who we build for</div>
       <h2 style="margin: 0; font-family: 'Cinzel', 'Times New Roman', serif; font-weight: 500; font-size: clamp(34px, 4.4vw, 58px); line-height: 1.12; letter-spacing: 0.02em; color: #1A1A20; text-align: center;">Commercial, tract and custom.</h2>
     </div>
-    <div class="grid-3 rail" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
-      <a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
+    <div class="grid-3 rail cs-rail" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+      <div class="cs-wrap"><span class="cs-key" aria-hidden="true"></span><a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
         <div class="zoom " style="position: relative; width: 100%; aspect-ratio: 3 / 4; min-height: 0; overflow: hidden; background: #ECEBE9; "><img src="/img/hero-poster-2.jpg" alt="Commercial" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></div>
         <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,18,22,0.15) 0%, rgba(18,18,22,0.9) 100%)"></div>
         <div style="position: absolute; left: 32px; right: 32px; bottom: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -494,8 +494,8 @@ html{scroll-behavior:smooth}
           <span style="font-family: 'Jost', system-ui, sans-serif; font-weight: 300; font-size: 17px; line-height: 1.6; color: #E4E0E8">Hotels, clinics, retail and shopping centers where travelers rest, patients heal and neighbors shop.</span>
           <span style="display: inline-flex; gap: 10px; align-items: center; font-family: 'Jost', system-ui, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F4689C">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
         </div>
-      </a>
-      <a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
+      </a><span class="cs-sill" aria-hidden="true"></span></div>
+      <div class="cs-wrap"><span class="cs-key" aria-hidden="true"></span><a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
         <div class="zoom " style="position: relative; width: 100%; aspect-ratio: 3 / 4; min-height: 0; overflow: hidden; background: #ECEBE9; "><img src="/img/townlake-1.jpg" alt="Residential Tract" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></div>
         <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,18,22,0.15) 0%, rgba(18,18,22,0.9) 100%)"></div>
         <div style="position: absolute; left: 32px; right: 32px; bottom: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -503,8 +503,8 @@ html{scroll-behavior:smooth}
           <span style="font-family: 'Jost', system-ui, sans-serif; font-weight: 300; font-size: 17px; line-height: 1.6; color: #E4E0E8">Whole neighborhoods for builders like Toll Brothers, delivered home after home on the builder's schedule.</span>
           <span style="display: inline-flex; gap: 10px; align-items: center; font-family: 'Jost', system-ui, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F4689C">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
         </div>
-      </a>
-      <a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
+      </a><span class="cs-sill" aria-hidden="true"></span></div>
+      <div class="cs-wrap"><span class="cs-key" aria-hidden="true"></span><a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
         <div class="zoom " style="position: relative; width: 100%; aspect-ratio: 3 / 4; min-height: 0; overflow: hidden; background: #ECEBE9; "><img src="/img/home-36-1.jpg" alt="Residential Custom" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></div>
         <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,18,22,0.15) 0%, rgba(18,18,22,0.9) 100%)"></div>
         <div style="position: absolute; left: 32px; right: 32px; bottom: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -512,7 +512,7 @@ html{scroll-behavior:smooth}
           <span style="font-family: 'Jost', system-ui, sans-serif; font-weight: 300; font-size: 17px; line-height: 1.6; color: #E4E0E8">One-of-a-kind homes where every wall carries an owner's vision.</span>
           <span style="display: inline-flex; gap: 10px; align-items: center; font-family: 'Jost', system-ui, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F4689C">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
         </div>
-      </a>
+      </a><span class="cs-sill" aria-hidden="true"></span></div>
     </div>
   </div>
 </section>
@@ -835,8 +835,8 @@ html{scroll-behavior:smooth}
       <div style="display: flex; align-items: center; gap: 14px; justify-content: center;font-family: 'Jost', system-ui, sans-serif; font-size: 13px; font-weight: 500; letter-spacing: 0.32em; text-transform: uppercase; color: #C21C5A"><span style="width: 36px; height: 1px; background: #C21C5A; flex: none"></span>Who we build for</div>
       <h2 style="margin: 0; font-family: 'Cinzel', 'Times New Roman', serif; font-weight: 500; font-size: clamp(34px, 4.4vw, 58px); line-height: 1.12; letter-spacing: 0.02em; color: #1A1A20; text-align: center;">Commercial, tract and custom.</h2>
     </div>
-    <div class="grid-3 rail" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
-      <a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
+    <div class="grid-3 rail cs-rail" style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px">
+      <div class="cs-wrap"><span class="cs-key" aria-hidden="true"></span><a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
         <div class="zoom " style="position: relative; width: 100%; aspect-ratio: 3 / 4; min-height: 0; overflow: hidden; background: #ECEBE9; "><img src="/img/hero-poster-2.jpg" alt="Commercial" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></div>
         <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,18,22,0.15) 0%, rgba(18,18,22,0.9) 100%)"></div>
         <div style="position: absolute; left: 32px; right: 32px; bottom: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -844,8 +844,8 @@ html{scroll-behavior:smooth}
           <span style="font-family: 'Jost', system-ui, sans-serif; font-weight: 300; font-size: 17px; line-height: 1.6; color: #E4E0E8">Hotels, clinics, retail and shopping centers where travelers rest, patients heal and neighbors shop.</span>
           <span style="display: inline-flex; gap: 10px; align-items: center; font-family: 'Jost', system-ui, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F4689C">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
         </div>
-      </a>
-      <a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
+      </a><span class="cs-sill" aria-hidden="true"></span></div>
+      <div class="cs-wrap"><span class="cs-key" aria-hidden="true"></span><a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
         <div class="zoom " style="position: relative; width: 100%; aspect-ratio: 3 / 4; min-height: 0; overflow: hidden; background: #ECEBE9; "><img src="/img/townlake-1.jpg" alt="Residential Tract" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></div>
         <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,18,22,0.15) 0%, rgba(18,18,22,0.9) 100%)"></div>
         <div style="position: absolute; left: 32px; right: 32px; bottom: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -853,8 +853,8 @@ html{scroll-behavior:smooth}
           <span style="font-family: 'Jost', system-ui, sans-serif; font-weight: 300; font-size: 17px; line-height: 1.6; color: #E4E0E8">Whole neighborhoods for builders like Toll Brothers, delivered home after home on the builder's schedule.</span>
           <span style="display: inline-flex; gap: 10px; align-items: center; font-family: 'Jost', system-ui, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F4689C">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
         </div>
-      </a>
-      <a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
+      </a><span class="cs-sill" aria-hidden="true"></span></div>
+      <div class="cs-wrap"><span class="cs-key" aria-hidden="true"></span><a class="shp-arch" href="/projects" style="position: relative; display: block; text-decoration: none; overflow: hidden; background: #121216">
         <div class="zoom " style="position: relative; width: 100%; aspect-ratio: 3 / 4; min-height: 0; overflow: hidden; background: #ECEBE9; "><img src="/img/home-36-1.jpg" alt="Residential Custom" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block"></div>
         <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,18,22,0.15) 0%, rgba(18,18,22,0.9) 100%)"></div>
         <div style="position: absolute; left: 32px; right: 32px; bottom: 32px; display: flex; flex-direction: column; gap: 12px">
@@ -862,7 +862,7 @@ html{scroll-behavior:smooth}
           <span style="font-family: 'Jost', system-ui, sans-serif; font-weight: 300; font-size: 17px; line-height: 1.6; color: #E4E0E8">One-of-a-kind homes where every wall carries an owner's vision.</span>
           <span style="display: inline-flex; gap: 10px; align-items: center; font-family: 'Jost', system-ui, sans-serif; font-size: 12px; letter-spacing: 0.3em; text-transform: uppercase; color: #F4689C">View projects <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"></path></svg></span>
         </div>
-      </a>
+      </a><span class="cs-sill" aria-hidden="true"></span></div>
     </div>
   </div>
 </section>
