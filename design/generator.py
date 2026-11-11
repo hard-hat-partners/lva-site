@@ -1025,7 +1025,7 @@ def services(sfx):
       <div style="grid-column: span 7; display: flex; flex-direction: column; gap: 22px">
         {eyebrow("How a wall comes together", PINKDK)}
         {h2("From lath to last coat.", "#FFFFFF", "clamp(32px, 4vw, 54px)")}
-        <p style="margin: 0; font-family: {SANS}; font-weight: 300; font-size: 18px; line-height: 1.7; color: {ONDARK}; max-width: 560px">Every stucco wall we build goes up the same way, in four stages, with nothing skipped and nothing rushed. Our own crews do the work, on our own pink scaffolds.</p>
+        <p style="margin: 0; font-family: {SANS}; font-weight: 300; font-size: 18px; line-height: 1.7; color: {ONDARK}; max-width: 560px">Every stucco wall we build goes up the same way, in four stages, with nothing skipped and nothing rushed. Our crews do the work, on our pink scaffolds.</p>
         <div style="display: flex; align-items: center; gap: 14px; margin-top: 8px"><span style="width: 8px; height: 8px; border-radius: 50%; background: {PINK}; box-shadow: 0 0 0 6px rgba(231,40,111,0.18)"></span><span style="font-family: {SANS}; font-size: 12px; letter-spacing: 0.28em; text-transform: uppercase; color: #FFFFFF">LVA crew on the wall, Dallas</span></div>
       </div>
       <div class="crew-v" style="grid-column: 8 / span 5; position: relative; padding: 0 0 28px 28px">

@@ -44,7 +44,7 @@ tpl = rep(tpl, 'Meet our founder', 'Every crew, every site')
 tpl = rep(tpl, '>Laura Ayala</h2>', '>One standard on every site.</h2>')
 tpl = rep(tpl, 'Founder, owner and CEO', 'OSHA certified crews')
 tpl = rep(tpl, 'Laura is a Texas Latina with roots in El Salvador. She values tradition, and she built her company on it: honest work, done right, by a crew that shows up. She started as Mayan Stucco, Inc. and grew it into LVA Mayan Stucco, LLC, and the standard never changed. She keeps a finger on the pulse of local market conditions so builders get realistic schedules and cost-conscious pricing, and she is grateful every day to serve the Dallas Fort Worth communities she calls home.',
-          'Every crew on an LVA site works to the same OSHA standard, whether they are our own people or trade partners we bring in. Before work starts, the crew walks the site, checks the scaffolds and talks through the day. If something is not safe, the work stops until it is.')
+          'Every crew on an LVA site works to the same OSHA standard. Before work starts, the crew walks the site, checks the scaffolds and talks through the day. If something is not safe, the work stops until it is.')
 tpl = rep(tpl, '“These cornerstones guide us in helping owners, contractors, developers and design professionals create beautiful interiors and exteriors for their projects.”', '“We build every wall to last, and we build it safely.”')
 tpl = rep(tpl, '>Laura Ayala</span>', '>LVA Mayan Stucco</span>', 2)
 
