@@ -1,0 +1,11 @@
+# Old WordPress pages
+/why-choose-us      /our-promise   301
+/why-choose-us/     /our-promise   301
+/contact-us         /contact       301
+/contact-us/        /contact       301
+/privacy-policy     /privacy       301
+/privacy-policy/    /privacy       301
+/portfolio/*        /projects      301
+/projects/          /projects      301
+/wp-admin/*         /              301
+/wp-login.php       /              301

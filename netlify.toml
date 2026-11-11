@@ -1,0 +1,19 @@
+[build]
+  publish = "site"
+
+# PREVIEW ONLY: keeps the preview out of search engines.
+# Delete this block on launch day, when lvamayanstucco.com points here.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/video/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
