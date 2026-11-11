@@ -1,0 +1,154 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "1794362242"
+ },
+ "title": "LVA Mayan Stucco Website, Modernized",
+ "launch": {
+  "view": "focused",
+  "file": "Main.dc.html"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1440,
+   "h": 7600,
+   "title": "Home \u00b7 Desktop",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Main-Phone.dc.html": {
+   "x": 0,
+   "y": 8020,
+   "w": 390,
+   "h": 8800,
+   "title": "Home \u00b7 Phone",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Services.dc.html": {
+   "x": 1600,
+   "y": 0,
+   "w": 1440,
+   "h": 6200,
+   "title": "Services \u00b7 Desktop",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Services-Phone.dc.html": {
+   "x": 1600,
+   "y": 8020,
+   "w": 390,
+   "h": 9800,
+   "title": "Services \u00b7 Phone",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Why.dc.html": {
+   "x": 3200,
+   "y": 0,
+   "w": 1440,
+   "h": 4900,
+   "title": "Our Promise \u00b7 Desktop",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Why-Phone.dc.html": {
+   "x": 3200,
+   "y": 8020,
+   "w": 390,
+   "h": 6800,
+   "title": "Our Promise \u00b7 Phone",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Projects.dc.html": {
+   "x": 4800,
+   "y": 0,
+   "w": 1440,
+   "h": 4400,
+   "title": "Projects \u00b7 Desktop",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Projects-Phone.dc.html": {
+   "x": 4800,
+   "y": 8020,
+   "w": 390,
+   "h": 9800,
+   "title": "Projects \u00b7 Phone",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Contact.dc.html": {
+   "x": 6400,
+   "y": 0,
+   "w": 1440,
+   "h": 2300,
+   "title": "Contact \u00b7 Desktop",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Contact-Phone.dc.html": {
+   "x": 6400,
+   "y": 8020,
+   "w": 390,
+   "h": 3400,
+   "title": "Contact \u00b7 Phone",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Privacy.dc.html": {
+   "x": 8000,
+   "y": 0,
+   "w": 1440,
+   "h": 3100,
+   "title": "Privacy & Terms \u00b7 Desktop",
+   "expand": "fill",
+   "is_interactive": true
+  },
+  "Privacy-Phone.dc.html": {
+   "x": 8000,
+   "y": 8020,
+   "w": 390,
+   "h": 5300,
+   "title": "Privacy & Terms \u00b7 Phone",
+   "expand": "fill",
+   "is_interactive": true
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "Main-Phone.dc.html",
+  "Services.dc.html",
+  "Services-Phone.dc.html",
+  "Why.dc.html",
+  "Why-Phone.dc.html",
+  "Projects.dc.html",
+  "Projects-Phone.dc.html",
+  "Contact.dc.html",
+  "Contact-Phone.dc.html",
+  "Privacy.dc.html",
+  "Privacy-Phone.dc.html"
+ ],
+ "notes": {
+  "t1": {
+   "x": 0,
+   "y": -300,
+   "text": "LVA Mayan Stucco \u00b7 Desktop",
+   "kind": "title1",
+   "maxW": 8000
+  },
+  "t2": {
+   "x": 0,
+   "y": 7720,
+   "text": "Phone",
+   "kind": "title1",
+   "maxW": 8000
+  }
+ },
+ "designSystems": []
+}
