@@ -10,7 +10,7 @@ def rep(s, old, new, count=1):
     return s.replace(old, new)
 
 # Hero
-tpl = rep(tpl, 'src="/img/vickery-1.jpg" alt="Vickery by Toll Brothers, aerial"', 'src="/img/svc-browncoat.jpg" alt="LVA crew in hard hats and safety vests on pink scaffolds"')
+tpl = rep(tpl, 'src="/img/vickery-1.jpg" alt="Vickery by Toll Brothers, aerial"', 'src="/img/vickery-6.jpg" alt="Home wrapped in LVA pink scaffolds at Vickery, Flower Mound"')
 tpl = rep(tpl, '>Our promise<', '>Safety<')
 tpl = rep(tpl, '>A woman-owned crew with a standard you can see from the street.<', '>Safety is part of every wall we build.<')
 i = tpl.find('>Every crew goes home')
