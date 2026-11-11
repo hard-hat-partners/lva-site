@@ -12,7 +12,7 @@ def rep(s, old, new, count=1):
 # Hero
 tpl = rep(tpl, 'src="/img/vickery-1.jpg" alt="Vickery by Toll Brothers, aerial"', 'src="/img/svc-browncoat.jpg" alt="LVA crew in hard hats and safety vests on pink scaffolds"')
 tpl = rep(tpl, '>Our promise<', '>Safety<')
-tpl = rep(tpl, '>A woman-owned crew with a standard you can see from the street.<', '>Every crew goes home the way it came to work.<')
+tpl = rep(tpl, '>A woman-owned crew with a standard you can see from the street.<', '>Safety is part of every wall we build.<')
 i = tpl.find('>Every crew goes home')
 j = tpl.find('LVA Mayan Stucco installs stucco, EIFS, plaster, and stone and brick veneers on commercial, industrial and residential buildings throughout Dallas Fort Worth.', i)
 assert j > 0
@@ -50,7 +50,7 @@ tpl = rep(tpl, '>Laura Ayala</span>', '>LVA Mayan Stucco</span>', 2)
 
 # Standards grid
 tpl = rep(tpl, '>Credentials<', '>On every jobsite<')
-tpl = rep(tpl, 'Certified for the systems architects specify.', 'The basics, done every day.')
+tpl = rep(tpl, 'Certified for the systems architects specify.', 'Our standards, on every job.')
 tpl = rep(tpl, 'Five wall systems, one crew trained to install each of them, with the licensing, insurance and bonding to match.', 'These are the standards every LVA crew follows, on every project, whatever the size.')
 tpl = rep(tpl, '>OSHA certified crews</span></div><div', '>Scaffolds checked before each shift</span></div><div')  # third item
 tpl = rep(tpl, '>HUB certified, woman-owned<', '>OSHA certified crews<')
@@ -90,5 +90,6 @@ for f in glob.glob('site/*.html'):
         # make Our Promise white and Safety pink in desktop nav (color #F4689C marks active)
         s2 = re.sub(r'(<a href="/our-promise" style="[^"]*?)color: #F4689C', r'\1color: #FFFFFF', s2)
         s2 = re.sub(r'(<a href="/safety" style="[^"]*?)color: #FFFFFF(; padding: 8px 2px")', r'\1color: #F4689C\2', s2)
+    s2 = re.sub(r'(<a href="/safety" style="[^"]*?); border-bottom: 1px solid #E7286F"', r'\1"', s2) if not f.endswith('safety.html') else re.sub(r'(<a href="/our-promise" style="[^"]*?); border-bottom: 1px solid #E7286F"', r'\1"', s2)
     open(f,'w').write(s2)
     print(f, s2.count('href="/safety"'))
