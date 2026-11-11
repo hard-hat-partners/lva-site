@@ -270,8 +270,8 @@ def cta_band(sfx):
       {eyebrow("Begin your project", PINKTX)}
       <h2 style="margin: 0; font-family: {SERIF}; font-weight: 500; font-size: clamp(38px, 4.8vw, 66px); line-height: 1.08; letter-spacing: 0.02em; color: {INK}">Your walls deserve<br><span style="font-family: {ITAL}; font-style: italic; font-weight: 400; text-transform: none; letter-spacing: 0; font-size: 1.12em; color: {PINKTX}">a crew in pink.</span></h2>
       <p style="margin: 0; font-family: {SANS}; font-weight: 400; font-size: 20px; line-height: 1.7; color: #2A2A31; max-width: 540px">Tell us what you are building. We will walk you through scope, schedule and the right system, from the first estimate to the final coat.</p>
-      <div style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 4px">{btn("Start a project", link("contact", sfx))}{btn("View our work", link("projects", sfx), "dark")}</div>
-      <div style="display: flex; flex-wrap: wrap; gap: 24px 48px; width: 100%; margin-top: 18px; padding-top: 30px; border-top: 1px solid rgba(18,18,22,0.16)">{det}</div>
+      <div class="cta-btns" style="display: flex; gap: 16px; flex-wrap: wrap; margin-top: 4px">{btn("Start a project", link("contact", sfx))}{btn("View our work", link("projects", sfx), "dark")}</div>
+      <div class="cta-det" style="display: flex; flex-wrap: wrap; gap: 24px 48px; width: 100%; margin-top: 18px; padding-top: 30px; border-top: 1px solid rgba(18,18,22,0.16)">{det}</div>
     </div>
     <div class="cta-art" style="grid-column: 8 / span 5; position: relative; padding: 0 28px 0 0">
       <div aria-hidden="true" class="deco" class="shp-step" style="position: absolute; top: -28px; right: 0; bottom: 56px; left: 56px; background: {BAS}; overflow: hidden">{monogram("mgcta" + sfx)}</div>
@@ -765,7 +765,7 @@ def projects(sfx):
     <div style="display: flex; flex-direction: column; gap: 18px; align-items: center; text-align: center">
       {eyebrow("The portfolio continues", PINKDK, True)}
       {h2("More walls with our name on them.", "#FFFFFF", "clamp(28px, 3.4vw, 46px)", center=True)}
-      <p style="margin: 0; font-family: {SANS}; font-weight: 300; font-size: 17px; line-height: 1.7; color: {ONDARK}; max-width: 560px">Commercial landmarks and private residences across Dallas Fort Worth. Private residences, galleries coming soon.</p>
+      <p style="margin: 0; font-family: {SANS}; font-weight: 300; font-size: 17px; line-height: 1.7; color: {ONDARK}; max-width: 560px">Commercial landmarks and private residences across Dallas Fort Worth. Photo galleries for these walls are coming soon.</p>
     </div>
     <div class="pgrid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 44px 24px; width: 100%; max-width: 920px; margin: 0 auto">
       <sc-for list="{{{{noPhotos}}}}" as="p" hint-placeholder-count="6">
@@ -1251,6 +1251,12 @@ html{{scroll-behavior:smooth}}
  .rail > *{{flex:0 0 82% !important}}
  .sw-list{{grid-template-columns:minmax(0,1fr) !important}}
  .mbar{{display:flex !important}}
+ .pgrid{{grid-template-columns:minmax(0,1fr) !important}}
+ .cta-btns{{display:grid !important;grid-template-columns:minmax(0,1fr);gap:12px !important;width:100%}}
+ .cta-btns .btn{{justify-content:center}}
+ .cta-det{{display:grid !important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 20px !important}}
+ .cta-det > div:nth-child(2){{grid-column:1 / -1;order:3}}
+ .cta-det > div:nth-child(3){{order:2}}
  footer{{padding-bottom:84px}}
  .stick .wrap{{padding-top:10px !important;padding-bottom:10px !important}}
  .svc-idx{{grid-template-columns:repeat(2,minmax(0,1fr)) !important}}
@@ -1296,7 +1302,7 @@ html{{scroll-behavior:smooth}}
 AT = [('Stucco', 'Walls built coat by coat, from lath to finish, for the homes families come back to every night.', ['home-21-4', 'vickery-2', 'townlake-2'], ['Custom homes', 'Tract neighborhoods', 'Commercial']), ('EIFS', 'Insulated exterior finish systems for the hotels, clinics and storefronts people step into every day. Fully insured for EIFS.', ['tru-1', 'tru-3', 'tru-5'], ['Hotels', 'Clinics', 'Storefronts']), ('Exterior Molding', 'Trim, bands and surrounds that give a facade its character from the street.', ['oakbridge-2', 'oakbridge-3', 'verandah-4'], ['Window surrounds', 'Bands', 'Trim']), ('Stonework', 'Stone and brick veneers that make an entry feel like home the moment you pull in.', ['home-22-1', 'landon-2', 'home-36-1'], ['Entries', 'Facades', 'Custom homes']), ('Cast Stone', 'Cast stone accents finished to the line the designer drew.', ['starwood-1', 'starwood-2', 'starwood-3'], ['Accents', 'Columns', 'Retail centers'])]
 
 def logic(key):
-    base = "stuck: !!this.state.stuck, menuOpen: !!this.state.menuOpen, toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }), heroH: this.heroH(), progress: (this.state.progress || 0).toFixed(2) + '%'"
+    base = "stuck: !!this.state.stuck, showStick: !!this.state.stuck && !this.state.menuOpen, menuOpen: !!this.state.menuOpen, toggleMenu: () => this.setState({ menuOpen: !this.state.menuOpen }), heroH: this.heroH(), progress: (this.state.progress || 0).toFixed(2) + '%'"
     atdata = json.dumps([{"name": n, "desc": d, "imgs": [img(k) for k in ks], "uses": u} for n, d, ks, u in AT])
     if key != "projects":
         return f'''class Component extends DCLogic {{
@@ -1502,7 +1508,7 @@ def logic(key):
 
 def sticky(page, sfx):
     links = "".join(f'<a href="{link(k, sfx)}" style="font-family: {SANS}; font-size: 12px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; text-decoration: none; color: {PINKDK if k == page else "#FFFFFF"}; padding: 8px 2px">{LABEL[k]}</a>' for k in NAV)
-    return f'''<sc-if value="{{{{stuck}}}}" hint-placeholder-val="{{{{false}}}}">
+    return f'''<sc-if value="{{{{showStick}}}}" hint-placeholder-val="{{{{false}}}}">
 <div class="stick" role="navigation" aria-label="Quick navigation" style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; background: rgba(18,18,22,0.86); backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%); border-bottom: 1px solid rgba(255,255,255,0.08); box-shadow: 0 10px 30px rgba(0,0,0,0.25)">
   <div class="wrap" style="display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-top: 12px; padding-bottom: 12px">
     <a href="{link("home", sfx)}" aria-label="LVA Mayan Stucco home" style="line-height: 0"><img src="{img("logo-white")}" alt="Mayan Stucco" style="width: 150px; height: auto; display: block"></a>
