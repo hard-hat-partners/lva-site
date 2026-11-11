@@ -7,7 +7,7 @@ import asyncio, os, re, sys, threading, http.server, functools
 from playwright.async_api import async_playwright
 
 SITE = os.path.abspath(sys.argv[1])
-PAGES = ['index', 'services', 'our-promise', 'projects', 'contact', 'privacy']
+PAGES = ['index', 'services', 'our-promise', 'safety', 'projects', 'contact', 'privacy']
 
 class Quiet(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *a):
