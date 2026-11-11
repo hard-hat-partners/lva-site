@@ -642,7 +642,7 @@ def why(sfx):
       {eyebrow("Meet our founder")}
       {h2("Laura Ayala")}
       {accent("Founder, owner and CEO", PINKTX, "26px")}
-      {lede("Laura is a proud Texan and a proud Latina with Salvadoran roots. She values tradition, and she built her company on it: honest work, done right, by a crew that shows up. She started as Mayan Stucco, Inc. and grew it into LVA Mayan Stucco, LLC, and the standard never changed. She keeps a finger on the pulse of local market conditions so builders get realistic schedules and cost-conscious pricing, and she is grateful every day to serve the Dallas Fort Worth communities she calls home.", MUTED, "19px", "580px")}
+      {lede("Laura is a Texas Latina with roots in El Salvador. She values tradition, and she built her company on it: honest work, done right, by a crew that shows up. She started as Mayan Stucco, Inc. and grew it into LVA Mayan Stucco, LLC, and the standard never changed. She keeps a finger on the pulse of local market conditions so builders get realistic schedules and cost-conscious pricing, and she is grateful every day to serve the Dallas Fort Worth communities she calls home.", MUTED, "19px", "580px")}
       <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 10px; padding-left: 28px; border-left: 2px solid {PINK}">
         <p style="margin: 0; font-family: {ITAL}; font-style: italic; font-size: clamp(24px, 2.4vw, 32px); line-height: 1.35; color: {INK}">“These cornerstones guide us in helping owners, contractors, developers and design professionals create beautiful interiors and exteriors for their projects.”</p>
         <span style="font-family: {SANS}; font-size: 13px; letter-spacing: 0.28em; text-transform: uppercase; color: {PINKTX}">Laura Ayala</span>
