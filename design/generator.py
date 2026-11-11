@@ -194,7 +194,7 @@ SOCIAL = [
 
 
 def creds_footer():
-    creds = [("seal", "Certified", "Woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
+    creds = [("seal", "HUB", "Certified woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
     CICON = {
         "seal": '<circle cx="12" cy="9" r="5.5"></circle><path d="M8.6 13.4 7 21l5-2.8 5 2.8-1.6-7.6"></path><path d="m9.6 9 1.6 1.6 3.2-3.2"></path>',
         "shield": '<path d="M12 3 4.5 6v5.5c0 4.6 3.2 8 7.5 9.5 4.3-1.5 7.5-4.9 7.5-9.5V6z"></path><path d="m8.8 12 2.2 2.2 4.3-4.4"></path>',
@@ -411,7 +411,7 @@ def home(sfx):
         "hat": '<path d="M3 17.5h18"></path><path d="M5 17.5V15a7 7 0 0 1 14 0v2.5"></path><path d="M10 8.3V6h4v2.3"></path><path d="M12 8v5"></path>',
         "pin": '<path d="M12 21s-6.5-6-6.5-11.2a6.5 6.5 0 0 1 13 0C18.5 15 12 21 12 21z"></path><path d="M9.2 10.6 12 6.6l2.8 4z"></path>',
     }
-    creds = [("seal", "Certified", "Woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
+    creds = [("seal", "HUB", "Certified woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
     cr = "".join(f'''<div class="cred" style="display: flex; align-items: center; gap: 22px; padding: 6px 26px; border-left: 1px solid rgba(255,255,255,0.14)">
           <span class="dia" aria-hidden="true" style="flex: none; width: 52px; height: 52px; border: 1px solid rgba(231,40,111,0.7); transform: rotate(45deg); display: flex; align-items: center; justify-content: center; background: rgba(18,18,22,0.6)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{PINK}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(-45deg)">{CICON[ic_]}</svg></span>
           <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0"><span style="font-family: {SERIF}; font-size: 26px; color: #FFFFFF; letter-spacing: 0.05em; line-height: 1">{a}</span><span style="font-family: {SANS}; font-weight: 300; font-size: 15px; line-height: 1.45; color: {ONDARK}">{b}</span></div>
@@ -665,7 +665,7 @@ CICON_L = {
 
 
 def creds_light_items():
-    items = [("seal", "Certified", "Woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
+    items = [("seal", "HUB", "Certified woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
     cr = "".join(f'''<div class="cred cred-l" style="display: flex; align-items: center; gap: 22px; padding: 6px 26px; border-left: 1px solid rgba(18,18,22,0.14)">
           <span class="dia" aria-hidden="true" style="flex: none; width: 52px; height: 52px; border: 1px solid {PINKTX}; transform: rotate(45deg); display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.7)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{PINKTX}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(-45deg)">{CICON_L[k]}</svg></span>
           <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0"><span style="font-family: {SERIF}; font-size: 26px; color: {INK}; letter-spacing: 0.05em; line-height: 1">{a}</span><span style="font-family: {SANS}; font-weight: 400; font-size: 15px; line-height: 1.45; color: #3A3A42">{b}</span></div>
@@ -674,7 +674,7 @@ def creds_light_items():
 
 
 def creds_light():
-    items = [("seal", "Certified", "Woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
+    items = [("seal", "HUB", "Certified woman-owned and operated"), ("shield", "Licensed", "Insured, including EIFS, and bonded"), ("hat", "OSHA", "Certified, safety first on every site"), ("pin", "DFW", "Commercial, industrial and residential")]
     cr = "".join(f'''<div class="cred cred-l" style="display: flex; align-items: center; gap: 22px; padding: 6px 26px; border-left: 1px solid rgba(18,18,22,0.14)">
           <span class="dia" aria-hidden="true" style="flex: none; width: 52px; height: 52px; border: 1px solid {PINKTX}; transform: rotate(45deg); display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.7)"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="{PINKTX}" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="transform: rotate(-45deg)">{CICON_L[k]}</svg></span>
           <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0"><span style="font-family: {SERIF}; font-size: 26px; color: {INK}; letter-spacing: 0.05em; line-height: 1">{a}</span><span style="font-family: {SANS}; font-weight: 400; font-size: 15px; line-height: 1.45; color: #3A3A42">{b}</span></div>
@@ -838,7 +838,7 @@ def projects(sfx):
 
 
 def contact_creds():
-    items = [("Certified", "Woman-owned and operated"), ("Licensed", "Insured, including EIFS, and bonded"), ("OSHA", "Certified, safety first on every site"), ("DFW", "Commercial, industrial and residential")]
+    items = [("HUB", "Certified woman-owned and operated"), ("Licensed", "Insured, including EIFS, and bonded"), ("OSHA", "Certified, safety first on every site"), ("DFW", "Commercial, industrial and residential")]
     return "".join(f'<div class="cred" style="display: flex; align-items: center; gap: 18px"><span class="dia" aria-hidden="true" style="flex: none; width: 14px; height: 14px; border: 1px solid {PINK}; transform: rotate(45deg); background: rgba(231,40,111,0.18)"></span><div style="display: flex; flex-direction: column; gap: 2px"><span style="font-family: {SERIF}; font-size: 19px; letter-spacing: 0.06em; color: #FFFFFF">{a}</span><span style="font-family: {SANS}; font-weight: 300; font-size: 14px; color: {ONDARK}">{b}</span></div></div>' for a, b in items)
 
 
@@ -1207,7 +1207,7 @@ html{{scroll-behavior:smooth}}
  .sw-stage{{display:none !important}}
  .sw-thumb{{display:block !important}}
  .sw-row > a{{align-items:start !important}}
- .at-tabs{{grid-template-columns:repeat(5,minmax(132px,1fr)) !important;overflow-x:auto;margin:0 -20px;padding:0 20px}}
+ .at-tabs{{grid-template-columns:repeat(6,minmax(0,1fr)) !important}}.at-tab{{grid-column:span 2}}.at-tab:nth-child(n+4){{grid-column:span 3}}
  .at-body > div{{grid-column:1 / -1 !important}}
  .hero-sub h1{{font-size:clamp(30px,9vw,38px) !important;line-height:1.08 !important}}
  .hero-sub > .wrap{{gap:16px !important}}
